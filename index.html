@@ -1,9 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="normalize.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Calculadora</title>
+</head>
 <body>
-  <h1>Hello World!</h1>
+</br>
+    <div>
+        <label for="valor">Valor:</label><input id="valor" type="text" onkeyup="calcular()"></br>
+        <label for="prazoEmAnos">Prazo (em anos):</label><input id="prazoEmAnos" type="text" onkeyup="calcular()"></br>
+        <label for="jurosAoAno">Juros (ao ano):</label><input id="jurosAoAno" type="text" onkeyup="calcular()"></br>
+        <button type="button">Simular</button></br>
+        <p id="resultado">Resultado: </p>
+    </div>
 
-  <script>
-    console.log("Olá, este é um script em execução!");
-    console.log("Outra mensagem!");
-  </script>
+<script>
+    function calcular(){
+        let valor = document.getElementById('valor').value;
+        let prazoEmAnos = document.getElementById('prazoEmAnos').value;
+        let jurosAoAno = document.getElementById('jurosAoAno').value;
+
+        let resultado = 0;
+        // calcular o júros e atribuir a variável "resultado"
+        // exemplo:
+        resultado = Number(valor) + Number(prazoEmAnos) + Number(jurosAoAno);
+
+        // exibir resultado;
+        document.getElementById('resultado').innerHTML = 'Resultado: ' + resultado;
+    }
+</script>
 </body>
+</html>
