@@ -1,3 +1,70 @@
-* {
-    margin: 10px;
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: blueviolet;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+div {
+  background-color: #fff;
+  padding: 8px;
+}
+
+button {
+  font-size: 1.3rem;
+}
+
+h1 {
+  font-size: 1.3rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+h1,
+h2,
+table,
+button,
+label {
+  margin: 5px;
+}
+
+h1,
+h2 {
+  margin-top: 25px;
+  margin-bottom: 8px;
+}
+
+h1,
+h2,
+th {
+  color: rgb(241, 64, 117);
+  font-weight: bolder;
+}
+
+label {
+  display: inline-block;
+}
+
+input {
+  width: 10rem;
+  display: block;
+  font-size: 1rem;
+}
+
+th,
+td {
+  padding-left: 8px;
+  text-align: right;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 0;
+  text-align: left;
 }
